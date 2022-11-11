@@ -1,2 +1,18 @@
-package PACKAGE_NAME;public class Circle {
+public class Circle {
+
+    private static double radius;
+    private static final double PI=Math.PI;
+    public Circle(int radius){
+        Circle.radius=radius;
+    }
+    public static double getRadius(){
+        return radius;
+    }
+    public static double arean() {
+        return  PI*(radius*radius);
+    }
+
+    public static double circumference() {
+        return PI*2*radius;
+    }
 }
